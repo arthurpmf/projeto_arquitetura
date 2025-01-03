@@ -1,0 +1,48 @@
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent; /* Cor padrão do fundo */
+    color: white; /* Cor padrão do texto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transições suaves */
+    z-index: 1000;
+  }
+  
+  .navbar.scrolled {
+    background-color: white; /* Fundo branco quando rolar */
+    color: gray; /* Texto cinza quando rolar */
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 100px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: inherit; /* Usa a cor herdada da navbar */
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+    color: rgb(255, 230, 0);
+  }
+  
